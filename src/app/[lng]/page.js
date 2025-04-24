@@ -4,7 +4,8 @@ import { Trans } from 'react-i18next/TransWithoutContext'
 import { getTranslation } from '../i18n/index'
 
 export default async function Page({ params }) {
-  const { t } = await getTranslation(params.lng)
+  const { lng } = await params
+  const { t } = await getTranslation(lng)
 
   return (
     <div className={styles.pageContainer}>
@@ -28,7 +29,7 @@ export default async function Page({ params }) {
         ))}
       </ol>
 
-      <Footer lng={params.lng} />
+      <Footer lng={lng} />
     </div>
   )
 }

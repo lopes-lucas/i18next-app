@@ -6,18 +6,14 @@ export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }))
 }
 
-export default function RootLayout({
-  children,
-  params: {
-    lng
-  }
-}) {
+export default async function RootLayout({ children, params }) {
+
+  const { lng } = await params
+
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
