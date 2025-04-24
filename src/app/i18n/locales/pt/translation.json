@@ -1,0 +1,20 @@
+{
+  "title": "Bem-vindo!",
+  "subtitle": "Esta página usa a biblioteca i18next para tradução.",
+  "instructions": {
+    "title": "Como usar",
+    "list": [
+      "Escolha um idioma.",
+      "Veja o conteúdo traduzido.",
+      "Clique no botão."
+    ]
+  },
+  "features": {
+    "title": "Funcionalidades",
+    "list": [
+      "Tradução em vários idiomas.",
+      "Interface simples.",
+      "Suporte a múltiplos formatos."
+    ]
+  }
+}

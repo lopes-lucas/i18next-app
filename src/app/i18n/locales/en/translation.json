@@ -1,0 +1,20 @@
+{
+  "title": "Welcome!",
+  "subtitle": "This page uses the i18next library for translation.",
+  "instructions": {
+    "title": "How to use",
+    "list": [
+      "Choose a language.",
+      "See the translated content.",
+      "Clique no botão."
+    ]
+  },
+  "features": {
+    "title": "Features",
+    "list": [
+      "Translation in multiple languages.",
+      "Simple interface.",
+      "Support for multiple formats."
+    ]
+  }
+}
