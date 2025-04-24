@@ -9,15 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
     "accept-language": "^3.0.20",
     "cookies-next": "^5.1.0",
     "i18next": "^25.0.1",
     "i18next-browser-languagedetector": "^8.0.5",
     "i18next-resources-to-backend": "^1.2.1",
     "next": "15.3.1",
+    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-i18next": "^15.5.1"
+    "react-i18next": "^15.5.1",
+    "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
