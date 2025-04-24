@@ -1,11 +1,10 @@
-import { useTranslation } from '../i18n'
 import { Footer } from './components/Footer'
 import styles from './page.module.css'
 import { Trans } from 'react-i18next/TransWithoutContext'
+import { getTranslation } from '../i18n/index'
 
 export default async function Page({ params }) {
-  const { lng } = params
-  const { t } = await useTranslation(lng)
+  const { t } = await getTranslation(params.lng)
 
   return (
     <div className={styles.pageContainer}>
@@ -29,7 +28,7 @@ export default async function Page({ params }) {
         ))}
       </ol>
 
-      <Footer lng={lng} className={styles.footer} />
+      <Footer lng={params.lng} />
     </div>
   )
 }
